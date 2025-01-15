@@ -1,0 +1,11 @@
+# Excluir el archivo config.py
+config.py
+
+# Este es el asistente que es un chatGPT pero en PY
+asistente.py
+
+# Probaba las preguntas pero solo respondia el chat
+pruebas.py
+
+# Generador de preguntas que le enseñamos a Carlos que esta mal el print
+pruebas2.py
