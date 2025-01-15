@@ -9,3 +9,5 @@ pruebas.py
 
 # Generador de preguntas que le enseñamos a Carlos que esta mal el print
 pruebas2.py
+
+__pycache__

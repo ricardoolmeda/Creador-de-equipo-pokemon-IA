@@ -7,9 +7,11 @@ def preguntas_pokemon():
         "Si pudieras vivir en una región del mundo Pokémon, ¿cuál elegirías?",
         "¿Tipo favorito?",
         "¿Prefieres entrenar Pokémon de un tipo específico o te gusta tener un equipo variado?",
+        "¿Te gusta otro tipo?, ¿cuál?",
+        "¿Te gustan los pokemons legendarios para tu equipo?",
+        "¿Te gusta tener un equipo pokemon solo de una región?",
         "¿Cuál es tu juego de Pokémon favorito?",
         "¿Te identificas con algún entrenador o personaje de la serie Pokémon?",
-        "¿Tienes algún recuerdo especial relacionado con Pokémon? ¿Qué pasó?",
         "¿Prefieres batallar en gimnasios o participar en concursos Pokémon?",
         "Si pudieras tener un Pokémon en la vida real, ¿cuál escogerías y por qué?"
     ]
@@ -24,7 +26,8 @@ def preguntas_pokemon():
 
 def menu_recomendaciones():
     print("1. Recomendar equipo")
-    print("2. Volver al menú principal")
+    print("2. Repitir cuestionorio")
+    print("3. Volver al menú principal")
     return input("Selecciona una opción: ")
 
 def main():
@@ -56,6 +59,8 @@ def main():
             messages.append({"role": "assistant", "content": response_content})
             print(f"> {response_content}")
         elif option == "2":
+            preguntas_pokemon()
+        elif option == "3":
             # Volver al menu principal
             print("Volviendo al menú principal.")
             break
